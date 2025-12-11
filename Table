@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Table</title>
+    </head>
+    <body>
+        <table border="2" bgcolor="blue">
+        <tr bgcolor="purple">
+            <th>Name</th>
+            <th>Their best friend</th>
+            <th>Nationality</th>
+            <th>Character</th>
+        </tr>
+        <tr bgcolor="pink">
+            <td>Noelle</td>
+            <td>Tarsha</td>
+            <td>French</td>
+            <td>Sportive</td>
+        </tr>
+        <tr bgcolor="li blue">
+            <td>Lilih</td>
+            <td>Alexandra</td>
+            <td>French</td>
+            <td>Funny</td>
+        </tr>
+        <tr bgcolor="ligreen">
+            <td>Juliette</td>
+            <td>Mya</td>
+            <td>French</td>
+            <td>Energetic</td>
+        </tr>
+        <tr bgcolor="yellow">
+            <td>Haru</td>
+            <td>Elisa</td>
+            <td>Japanese</td>
+            <td>Smart</td>
+        </tr>
+        </table>
+    </body>
+</html>
