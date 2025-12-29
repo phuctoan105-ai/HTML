@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> My food webpage</title>
+    </head>
+    <body bgcolor="li blue">
+        <header>
+            <center>
+            <h1>Food and desserts</h1>
+            <nav>
+                <a href="#">Home</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">Contact us</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">Service</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">About us</a>&nbsp;&nbsp;&nbsp;
+            </nav></center>
+        </header>
+        <hr><section>
+            <article>
+                <h2> Hamburgers </h2>
+                <p>A hamburger, or burger, is a popular sandwich featuring a cooked patty (usually ground beef) served in a sliced bun, often with toppings like lettuce, tomato, onion, pickles, cheese, and condiments like ketchup or mustard, originating from German/American food traditions and evolving into a global fast-food staple. It's a versatile meal, from quick fast-food to gourmet versions with diverse patties (turkey, chicken, veggie) and creative toppings, but the classic remains a grilled or fried beef patty in a soft bun. </p>
+                <figure>
+                    <img width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoFa5LjBkFgL2XdA3-FF-iqwOumsq5HGOfg&s">
+                    <figcaption>A HAMBURGER</figcaption>
+                </figure>
+            </article><hr>
+            <article>
+                <h2>Ice cream</h2>
+                <p>Ice cream is a sweet, frozen dessert made from a base of milk, cream, sugar, and flavorings, churned while freezing to incorporate air and create a smooth, semi-solid foam with tiny ice crystals. To be legally called ice cream in the U.S., it must contain at least 10% milkfat, contributing to its rich texture, with common additions like fruits, nuts, or chocolate for variety. </p>
+                <figure>
+                    <img width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYFULypZgudRiujz0RZgtiT5R7Z2rilcdcBQ&s">
+                    <figcaption>ICE CREAM</figcaption>
+                </figure>
+            </article>
+        </section><hr>
+        <footer>
+            <h4> Contact us at 0837779934 </h4>
+            <h4>Email us at noelle.bernard@lfib.ac.th</h4>
+            <h4>Address Thailand</h4>
+            <center><p style="background-color:black; color:aliceblue;>Copyright &copy; 2025 all the rights are reserved by Noelle </p>
+            </footer></center>
+
+    </body>
+</html>
