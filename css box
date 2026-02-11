@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .a{
+            width: 200px;
+            background-color:rgb(185, 255, 127);
+            border-radius:15px;
+            margin:10px;
+            padding: 20px;
+            border:5px solid rgb(43, 205, 226);
+            float:left;
+        }
+        img{
+            width:100%;
+        }
+        p{
+            text-align:justify;
+        }
+        h1{
+            text-align:center;
+        }
+         .b{
+            width: 200px;
+            background-color:rgb(225, 0, 255);
+            border-radius:15px;
+            margin:10px;
+            padding: 20px;
+            border:5px solid rgb(43, 86, 226);
+            float:left;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="a">
+        <h1>Tennis</h1>
+        <img src="https://magazine.fortevillageresort.com/wp-content/uploads/2022/01/tennis-770x513.jpg">
+        <p>Tennis is a popular racket sport played individually against a single opponent (singles) or between two teams of two players (doubles). Using stringed rackets, players hit a felt-covered hollow ball over a net, aiming to land it within the court boundaries in a way that prevents the opponent from returning it. It is a competitive, strategic sport played on various surfaces, including grass, clay, and hardcourts. </p>
+        
+
+    </div>
+    <div class="b">
+        <h1>Badminton</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTET_0Dic4vbH0gAidGAjWHj660xhgJOfI32Q&s">
+        <p>Badminton is a fast-paced racket sport played indoors on a court divided by a net, either in singles (1v1) or doubles (2v2). Players use lightweight rackets to hit a shuttlecock—a feathered or synthetic projectile—over the net, aiming to land it in the opponent's court. It requires high agility, speed, and reflexes, with matches played to 21 points in a best-of-three format. </p>
+<br>
+    </div>
+</body>
+</html>
