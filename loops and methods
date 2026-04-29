@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body bgcolor="pink"> 
+    <h1>Javascript methods and loops</h1>
+    <script>
+        var str="I love Ice cream";
+        document.write(str.toUpperCase());
+        document.write("<br>");
+        document.write(str.toLowerCase());
+        document.write("<br>");
+        document.write(str.startsWith("I"));
+        document.write("<br>");
+
+        var smth="I love food";
+        var vwx=new RegExp("Javascript");
+        var result=vwx.test (smth);
+        document.write(result);
+
+
+
+
+    </script><br><br>
+
+    <script>
+        var m;
+        for(m=1;m<=100;m++){
+            document.write(m,"<br>")
+        }
+    </script>
+</body>
+</html>
