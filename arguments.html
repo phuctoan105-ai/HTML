@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <p id="answer"></p>
+    <script>
+        function findMAX(){
+            var e;
+            var max=0
+            for(e=0;e<arguments.length;e++){
+                if(arguments[e]>max){
+                    max=arguments[e];
+                }
+            }
+            return max;
+        }
+        document.getElementById("answer").innerHTML=findMAX(4,68,2,9,45);
+    </script>
+    
+</body>
+</html>
