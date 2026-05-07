@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <script>
+        var cars=["BMW","Mercedes","Toyota","BYD","Honda"];
+        document.getElementById("a").innerHTML=cars.join("*");
+        document.getElementById("b").innerHTML=cars;
+        cars.pop();
+        document.getElementById("c").innerHTML=cars;
+    </script>
+</body>
+</html>
