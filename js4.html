@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <h2>The highest number is ...</h2>
+    <h2>The sum is ...</h2>
 </head>
 <body bgcolor="blue">
     <p id="abc"></p>
     <script>
         function findMAX(){
             var a;
-            var max=0
+            var sum=0
             for(a=0;a<arguments.length;a++){
-                if(arguments[a]>max){
-                    max=arguments[a];
-                }
+                
+                    sum=sum+arguments[a];
+                
             }
-            return max;
+            return sum;
         }
         document.getElementById("abc").innerHTML=findMAX(2,3,4,5,26);
     </script>
