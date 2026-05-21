@@ -1,0 +1,17 @@
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background:lightpink;
+    text-align: center;
+    padding:20px;
+    
+}
+button{
+    background-color: blueviolet;
+    color:aliceblue;
+    border:3px;
+    border-radius:20px;
+}
+p{
+    border:1px solid navy;
+    
+}
