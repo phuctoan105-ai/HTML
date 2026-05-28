@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: aqua;
+            text-align: center;
+        }
+        #cards{
+            color: rgb(17, 11, 3);
+            background-color: rgb(238, 219, 238);
+            padding: 15px;
+            margin: 10px;
+            border:2px solid rgb(196, 22, 240);
+            display: inline-block;
+            width:190px;
+
+
+        }
+        button{
+            background-color:blue;
+            color:rgb(1, 8, 8);
+            padding:20px 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Planets</h1>
+    <button onclick="showplanet()">Show Planet</button>
+    <div id="cards"></div>
+    <script>
+        class Planet{
+            constructor(name,fact){
+                this.name=name;
+                this.fact=fact;
+
+            }
+            describe(){
+                return this.name+"-"+this.fact;
+            }
+            
+        }
+        function showplanet(){
+            let p1=new Planet("Earth","Planet with life.");
+            let p2=new Planet("Mercury","Fastest planet.");
+            let p3=new Planet("Jupiter","Biggest planet");
+            document.getElementById("cards").innerHTML=
+            "<div class='card'>"+p1.describe()+"</div>"+
+             "<div class='card'>"+p2.describe()+"</div>"+
+              "<div class='card'>"+p3.describe()+"</div>";
+
+        }
+    </script>
+</body>
+</html>
