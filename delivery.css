@@ -1,0 +1,18 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: chocolate;
+}
+button{
+    background-color: rgb(247, 168, 140);
+    color: black;
+    border:none;
+    padding: 8px 15px;
+    margin:15px;
+}
+p{
+    border:1px solid orangered;
+    width: 200;
+    margin: 5px auto;
+    padding:5px;
+}
