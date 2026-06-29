@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Form</title>
+ 
+  
+</head>
+ 
+<body>
+ 
+  <div class="form-card">
+ 
+    <h1>Event Registration Form</h1>
+ 
+    <p>
+      Fill in the form to register for the school event and generate your event pass.
+    </p>
+ 
+    <form id="eventForm">
+ 
+      <label for="studentName">Student Name</label>
+      <input
+        type="text"
+        id="studentName"
+        required
+        minlength="3"
+        placeholder="Enter your name"
+      >
+      <br>
+ 
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        id="email"
+        required
+        placeholder="Enter your email"
+      >
+ <br>
+      <label for="age">Age</label>
+      <input
+        type="number"
+        id="age"
+        required
+        min="8"
+        max="18"
+        placeholder="Enter your age"
+      >
+ <br>
+      <label for="eventName">Choose Event</label>
+      <select id="eventName" required>
+        <option value="">Select an event</option>
+        <option value="Science Fair">Science Fair</option>
+        <option value="Coding Workshop">Coding Workshop</option>
+        <option value="Art Competition">Art Competition</option>
+        <option value="Sports Day">Sports Day</option>
+      </select>
+ <br>
+      <button type="button" onclick="registerEvent()">Register Now</button>
+ 
+    </form>
+ 
+    <div id="feedback">
+      Waiting for registration...
+    </div>
+ 
+  </div>
+ 
+  <script>
+    function registerEvent() {
+ 
+      let form = document.getElementById("eventForm");
+      let feedback = document.getElementById("feedback");
+ 
+      try {
+ 
+        // Constraint Validation API
+        if (!form.checkValidity()) {
+          throw form.reportValidity();
+        }
+ 
+        // Accessing Form Data
+        let studentName = document.getElementById("studentName").value;
+        let email = document.getElementById("email").value;
+        let age = Number(document.getElementById("age").value);
+        let eventName = document.getElementById("eventName").value;
+ 
+        // Writing Validation Conditions
+        if (studentName.length < 3) {
+          throw "Name must have at least 3 characters.";
+        }
+ 
+        if (age < 8 || age > 18) {
+          throw "Age must be between 8 and 18.";
+        }
+ 
+        if (eventName === "") {
+          throw "Please select an event.";
+        }
+ 
+        // DOM Feedback before timer
+        feedback.className = "";
+        feedback.innerHTML = "Checking your registration details...";
+ 
+        // Timers and Random Numbers
+        setTimeout(function() {
+          let passNumber = Math.floor(Math.random() * 9000) + 1000;
+ 
+          feedback.className = "success";
+          feedback.innerHTML =
+            "Registration Successful!<br>" +
+            "Student Name: " + studentName + "<br>" +
+            "Email: " + email + "<br>" +
+            "Age: " + age + "<br>" +
+            "Event: " + eventName + "<br>" +
+            "Your Event Pass Number: EVT-" + passNumber;
+        }, 2000);
+ 
+      } catch (error) {
+ 
+        // DOM Feedback for errors
+        feedback.className = "error";
+ 
+        if (error !== undefined) {
+          feedback.innerHTML = "Registration failed: " + error;
+        } else {
+          feedback.innerHTML = "Please complete all required fields correctly.";
+        }
+      }
+    }
+  </script>
+ 
+</body>
+</html>
