@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <style>
+        button{
+            padding: 10px 15px;
+            background-color: aquamarine;
+            color:black;
+            border:none;
+            cursor:pointer;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        button:hover{
+            background-color:aqua;
+        }
+        #msg-name,
+        #msg-guess{
+            color:violet;
+        }
+        #result{
+            color:rgb(127, 178, 255);
+            font-weight:bold;
+        }
+        body{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 35px;
+        }
+        input{
+            margin: 8px;
+            width: 250px;
+            padding: 8px;
+        }
+        #timer{
+            color:brown;
+        }
+    </style>
 </head>
 <body>
     <h1 style="color:cornflowerblue">Lucky Draw</h1>
-    <p>Test your luck by entring your name and number.</p>
+    <p>Test your luck by entering your name and number.</p>
     <input type="text" id="name" placeholder="Your name">
     <p id="msg-name"></p>
 
