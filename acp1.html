@@ -39,5 +39,29 @@
         <a href="#">Services</a>
         <a href="#">Offer</a>
     </div>
+    <section>
+  <img class="mySlides" src="https://images.ctfassets.net/j8tkpy1gjhi5/5OvVmigx6VIUsyoKz1EHUs/b8173b7dcfbd6da341ce11bcebfa86ea/Salami-pizza-hero.jpg" style="height:500px; width:500px;">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZf84AwzNFBxiL_4GuY0EMRQ3fCjIgYd5eI7mUevHRdL-VVR7lPGn-tf2Z&s=10" style="height:500px; width:500px;">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yUT-akcbb3nnuwvk8TdUxWlPAIkqrs3UqUZPGNC_eMM-M-H9pEFIvNGD&s=10" style="height:500px; width:500px;">
+</section>
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
 </body>
 </html>
