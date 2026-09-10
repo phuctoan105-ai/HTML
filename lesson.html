@@ -28,6 +28,37 @@
         background-color:plum;
         color:lavender;
     }
+    .d{
+        position : relative;
+        opacity :0.7;
+        background-position :center;
+        background-size:cover;
+        background-repeat :no-repeat;
+        background-attachment: fixed;
+    }
+    .d{
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGTXZ6sFg-BSZcjp5ehoctUv0WV7QKaXvAEXSeDiPXroN2J4r4L0kBh4&s=10");
+        min-height :500px;
+    }
+    .section{
+        text-align:center;
+        padding:50px 80px;
+
+    }
+    .section-dark{
+        background-color:brown;
+        color :cornsilk;
+    }
+    .e{
+        position:absolute;
+        top:50%;
+        width:100%;
+        text-align:center;
+        color:rgb(240, 209, 209);
+        font-size:27px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
    </style>
 </head>
 <body>
@@ -41,7 +72,19 @@
         <img class="b" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLeDfYxbGsjbdhSK4rG6p1M1Stlz4BFKQEKmd65WECoA&s=10" style="height: 500px; width:500px;">
         <img class="b" src="https://img.sonofatailor.com/images/customizer/product/extra-heavy-cotton/ss/Black.jpg" style="height:500px; width:500px;">
 
+
     </section>
+    <section class="section section-dark">
+        <h2>Dress</h2>
+        <p>A dress is a single piece of clothing that covers the top part of the body and hangs down over the legs, usually worn by women and girls.</p>
+
+    </section>
+    <div class="d">
+        <div class="e">
+            <span class="border trans">Dress</span>
+        </div>
+    </div>
+    
     <script>
         var myIndex = 0;
         carousel();
@@ -58,5 +101,6 @@
         }
         
     </script>
+
 </body>
 </html>
